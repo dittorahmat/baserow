@@ -14,7 +14,7 @@ VOLUME ["baserow_data:/baserow/data"]
 # web-frontend services as. However be warned, the default entrypoint needs to be run 
 # as root so using USER may break things.
 ENV DOCKER_USER=baserow_docker_user
-ENV BASEROW_PUBLIC_URL=http://cl1jwsmas00043862lk85cxbc.demo.coolify.io/
+ENV BASEROW_PUBLIC_URL=http://localhost
 
 #ARG FROM_IMAGE=baserow/baserow:1.9.1
 # This is pinned as version pinning is done by the CI setting FROM_IMAGE.
