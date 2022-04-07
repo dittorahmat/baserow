@@ -1,4 +1,3 @@
-#####
 ARG FROM_BACKEND_IMAGE=baserow_backend
 ARG FROM_WEBFRONTEND_IMAGE=baserow_web-frontend
 # This is pinned as version pinning is done by the CI setting FROM_IMAGE.
