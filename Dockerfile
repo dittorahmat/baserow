@@ -9,6 +9,7 @@ FROM baserow/baserow:1.9.1
 
 # Set the DATA_DIR environment variable to change where Baserow stores its persistant 
 # data. At startup Baserow will attempt to chown and setup this folder correctly.
+ENV BASEROW_PUBLIC_URL=http://cl1jwsmas00043862lk85cxbc.demo.coolify.io/
 ENV DATA_DIR=/baserow/data
 ENV DISABLE_VOLUME_CHECK=yes
 
