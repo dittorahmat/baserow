@@ -7,6 +7,8 @@ FROM baserow/baserow:1.9.1
 # Set the DATA_DIR environment variable to change where Baserow stores its persistant 
 # data. At startup Baserow will attempt to chown and setup this folder correctly.
 ENV DATA_DIR=/baserow/data
+RUN mkdir -p "$DATA_DIR" && \
+    chown -R 9999:9999 "$DATA_DIR"
 
 # This image bakes in its own default user with UID/GID of 9999:9999 by default. To
 # Set this to change the user Baserow will run its Caddy, backend, Celery and 
