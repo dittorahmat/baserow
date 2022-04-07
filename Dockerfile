@@ -2,7 +2,7 @@ FROM baserow/baserow:1.9.1
 
 # Any .sh files found in /baserow/supervisor/env/ will be sourced and loaded at startup
 # useful for storing your own environment variable overrides.
-COPY custom_env.sh /baserow/supervisor/env/custom_env.sh
+#COPY custom_env.sh /baserow/supervisor/env/custom_env.sh
 
 # Set the DATA_DIR environment variable to change where Baserow stores its persistant 
 # data. At startup Baserow will attempt to chown and setup this folder correctly.
