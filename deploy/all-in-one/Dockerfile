@@ -104,8 +104,8 @@ COPY --chown=$UID:$GID --from=web_frontend_image_base /baserow/web-frontend/.nux
 COPY --chown=$UID:$GID --from=web_frontend_image_base /baserow/ /baserow/
 COPY --chown=$UID:$GID --from=backend_image_base /baserow/ /baserow/
 
-COPY deploy/all-in-one/supervisor/ /baserow/supervisor
+COPY /baserow/deploy/all-in-one/supervisor/ /baserow/supervisor
 
-COPY deploy/all-in-one/baserow.sh /baserow.sh
+COPY /baserow/deploy/all-in-one/baserow.sh /baserow.sh
 ENTRYPOINT ["/baserow.sh"]
 CMD ["start"]
