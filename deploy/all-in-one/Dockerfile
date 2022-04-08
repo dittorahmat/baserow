@@ -1,5 +1,5 @@
-ARG FROM_BACKEND_IMAGE=baserow_backend
-ARG FROM_WEBFRONTEND_IMAGE=baserow_web-frontend
+ARG FROM_BACKEND_IMAGE=baserow/backend
+ARG FROM_WEBFRONTEND_IMAGE=baserow/web-frontend
 # This is pinned as version pinning is done by the CI setting FROM_IMAGE.
 # hadolint ignore=DL3006
 FROM $FROM_BACKEND_IMAGE as backend_image_base
