@@ -89,7 +89,7 @@ RUN apt-get update && \
 # In slim docker images, mime.types is removed and we need it for mimetypes guessing
 #COPY --chown=$UID:$GID /baserow/backend/docker/mime.types /etc/
 
-COPY --chown=$UID:$GID Caddyfile /baserow/caddy/Caddyfile
+#COPY --chown=$UID:$GID Caddyfile /baserow/caddy/Caddyfile
 
 HEALTHCHECK CMD ["/bin/bash", "/baserow/backend/docker/docker-entrypoint.sh", "backend-healthcheck"]
 
