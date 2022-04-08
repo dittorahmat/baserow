@@ -87,7 +87,7 @@ RUN apt-get update && \
     chown redis:redis /etc/redis/redis.conf
 
 # In slim docker images, mime.types is removed and we need it for mimetypes guessing
-COPY --chown=$UID:$GID /baserow/backend/docker/mime.types /etc/
+#COPY --chown=$UID:$GID /baserow/backend/docker/mime.types /etc/
 
 COPY --chown=$UID:$GID Caddyfile /baserow/caddy/Caddyfile
 
