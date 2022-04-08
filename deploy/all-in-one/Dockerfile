@@ -106,6 +106,6 @@ COPY --chown=$UID:$GID --from=backend_image_base /baserow/ /baserow/
 
 #COPY /baserow/deploy/all-in-one/supervisor/ /baserow/supervisor
 
-COPY /baserow/deploy/all-in-one/baserow.sh /baserow.sh
+COPY deploy/all-in-one/baserow.sh /baserow.sh
 ENTRYPOINT ["/baserow.sh"]
 CMD ["start"]
